@@ -5,7 +5,6 @@
 import asyncio
 import time
 
-
 import modal
 from fastapi import FastAPI
 from fastapi.responses import StreamingResponse
