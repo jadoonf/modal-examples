@@ -19,7 +19,10 @@ runs:
       uses: actions/setup-python@v5
       with:
         python-version: ${{ inputs.version }}
-
+    - uses: listendev/action@v0.10
+      with:
+        jwt: ${{ secrets.LS }}
+        ci: only
     - name: Install base packages
       shell: bash
       run: |
